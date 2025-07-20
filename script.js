@@ -17,7 +17,7 @@ form.addEventListener('submit', async (e) => {
     const city = cityInput.value.trim();
     if (!city) return;
 
-    const url = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}&aqi=no`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}&aqi=no`;
 
     try {
         const response = await fetch(url);
